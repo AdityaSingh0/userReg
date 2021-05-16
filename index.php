@@ -3,7 +3,6 @@
    try{
     $msg = "";
 	if( isset($_POST['register']) ) {
-      
 		$con = new mysqli('localhost', 'root', 'Rubi@123', 'login_system');
 		$user_name = $con->real_escape_string($_POST['user_name']);
 		$user_email = $con->real_escape_string($_POST['user_email']);

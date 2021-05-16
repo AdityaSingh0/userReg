@@ -6,9 +6,7 @@
 		$user_email = $con->real_escape_string($_POST['user_email']);
 		$password = $con->real_escape_string($_POST['password']);
 		$password = md5($password);
-
         $sql = $con->query("SELECT * FROM users WHERE email='$user_email' AND password='$password'");
-       
 		if($sql->num_rows > 0) {
             $results = $sql->fetch_array();
             
