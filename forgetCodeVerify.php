@@ -16,7 +16,6 @@ try{
 		echo 'Code validation failed';
 	}
     }
-    
 } catch (Exception $e){
   echo $e->getMessage();
 }	
