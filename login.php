@@ -1,4 +1,5 @@
 <?php
+
 	$msg = "";
 	if( isset($_POST['login']) ) {
 		$con = new mysqli('localhost', 'root', 'Rubi@123', 'login_system');
