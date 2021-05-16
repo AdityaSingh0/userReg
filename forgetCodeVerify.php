@@ -1,6 +1,5 @@
 <?php
 try{
-    
     if(!empty($_POST)){	
     $con = new mysqli('localhost', 'root', 'Rubi@123', 'login_system');
     $email = $con->real_escape_string($_POST['user_email']);

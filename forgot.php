@@ -5,7 +5,6 @@ try{
  $msg = "";
  if( isset($_POST['forgot']) ) {
      $con = new mysqli('localhost', 'root', 'Rubi@123', 'login_system');
-     
      $user_email = $con->real_escape_string($_POST['user_email']);
      
          $sql = $con->query("SELECT user_id FROM users WHERE email='$user_email'");

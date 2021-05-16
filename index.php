@@ -1,5 +1,4 @@
 <?php
-
    try{
     $msg = "";
 	if( isset($_POST['register']) ) {
